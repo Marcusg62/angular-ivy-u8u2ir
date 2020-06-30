@@ -1,0 +1,22 @@
+        <div style="width: 100%; display: flex; flex-wrap: wrap;   flex-direction: column;   border-radius: 8px !important;   ">
+
+          <div [id]="group + '_header'"
+            style="width: 100%; display: none; justify-content: space-between; align-items: center; height: 48px; padding: 10px;">
+            <h2 style="  font: bold 24px/45px Helvetica, Sans-Serif;">{{group}}</h2>
+            <mat-icon style="margin-left: auto;">navigate_next</mat-icon>
+          </div>
+
+          <div class="imageDiv" [id]="group + '_pic'">
+            <img class="groupPic" src="https://media-cdn.grubhub.com/image/upload/f_auto,fl_lossy,q_100,c_fill,w_376/ygy6qqqeysdlu03czd33" [alt]="'Photo of ' + group"
+              (error)="handleImageError(group)">
+
+            <div class="flexHeader">
+              <div class="imageText">
+                <h3>{{group}} </h3>
+                <mat-icon>navigate_next</mat-icon>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
